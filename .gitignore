@@ -1,0 +1,6 @@
+# Project exclude paths
+/.idea/
+/qrcode/
+/qrcode2/
+/target/
+summary*.txt

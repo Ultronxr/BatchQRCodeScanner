@@ -5,4 +5,5 @@
 /qrcode/
 /qrcode2/
 summary*.txt
+scan*.txt
 *log*.*

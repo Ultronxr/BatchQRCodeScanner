@@ -15,19 +15,19 @@
 + jar包放到根目录运行
 
 ```shell
-java -jar BatchQRCodeScanner.jar
+java -jar BatchQRCodeScanner-<version>-jar-with-dependencies.jar
 ```
 
 + 文件夹路径使用参数形式传入
 
 ```shell
-java -jar BatchQRCodeScanner.jar "文件(夹)路径"
+java -jar BatchQRCodeScanner-<version>-jar-with-dependencies.jar "文件(夹)路径"
 ```
 
 ### 2. 散落的二维码文件
 
 ```shell
-java -jar BatchQRCodeScanner.jar "文件(夹)路径1" "文件(夹)路径2" ...
+java -jar BatchQRCodeScanner-<version>-jar-with-dependencies.jar "文件(夹)路径1" "文件(夹)路径2" ...
 ```
 
 ## IDE中运行

@@ -37,7 +37,6 @@ public class MainMethod {
         } else {
             log.info("当前工作目录：{}", (Object) args);
             for(String arg : args) {
-                FileProcessor.clearImageFilepathList();
                 FileProcessor.findImageFileRecursively(new File(arg));
             }
             doScanQRCode();

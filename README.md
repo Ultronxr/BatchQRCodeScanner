@@ -51,3 +51,13 @@ java -jar BatchQRCodeScanner.jar "文件(夹)路径1" "文件(夹)路径2" ...
 + log.txt
 
 二维码扫描日志
+
+# maven 打包jar包方式
+
+（搭建好项目开发环境后）命令行运行如下三者之一命令：
+
+```shell
+mvn package
+mvn install
+mvn package assembly:single
+```

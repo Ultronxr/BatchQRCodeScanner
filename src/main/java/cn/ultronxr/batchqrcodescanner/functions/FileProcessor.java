@@ -1,4 +1,4 @@
-package functions;
+package cn.ultronxr.batchqrcodescanner.functions;
 
 import java.io.File;
 import java.io.IOException;

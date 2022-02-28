@@ -1,6 +1,7 @@
+package cn.ultronxr.batchqrcodescanner;
+
 import com.google.zxing.NotFoundException;
-import functions.FileProcessor;
-import functions.QRCodeUtils;
+import cn.ultronxr.batchqrcodescanner.functions.*;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedWriter;
@@ -38,8 +39,8 @@ public class MainMethod {
             for(String arg : args) {
                 FileProcessor.clearImageFilepathList();
                 FileProcessor.findImageFileRecursively(new File(arg));
-                doScanQRCode();
             }
+            doScanQRCode();
             doSummary();
         }
     }
@@ -79,7 +80,7 @@ public class MainMethod {
             FileWriter fileWriter = new FileWriter("scan_result.txt", false);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             for(String result : SCAN_RESULT_LIST) {
-                bufferedWriter.write(result);
+                bufferedWriter.write(result + "\n");
             }
             bufferedWriter.flush();
             fileWriter.flush();
@@ -90,7 +91,7 @@ public class MainMethod {
             fileWriter = new FileWriter("scan_error.txt", false);
             bufferedWriter = new BufferedWriter(fileWriter);
             for(String result : SCAN_ERROR_FILEPATH_LIST) {
-                bufferedWriter.write(result);
+                bufferedWriter.write(result + "\n");
             }
             bufferedWriter.flush();
             fileWriter.flush();

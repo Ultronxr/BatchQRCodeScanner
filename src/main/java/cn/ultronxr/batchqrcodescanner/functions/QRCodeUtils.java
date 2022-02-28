@@ -1,4 +1,4 @@
-package functions;
+package cn.ultronxr.batchqrcodescanner.functions;
 
 import com.google.zxing.*;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;

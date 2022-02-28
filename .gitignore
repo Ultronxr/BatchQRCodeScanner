@@ -1,9 +1,9 @@
 # Project exclude paths
 /.idea/
 /target/
+/out/
 
 /qrcode/
 /qrcode2/
-summary*.txt
 scan*.txt
 *log*.*
